@@ -15,7 +15,10 @@ public class LogTestController {
         String name = "Spring";
 
         log.info("name = {}", name);
-
+        log.trace("trace log = {}", name);
+        log.debug("debug log = {}", name);
+        log.warn("warn log = {}", name);
+        log.error("error log = {}", name);
         return "ok";
     }
 
